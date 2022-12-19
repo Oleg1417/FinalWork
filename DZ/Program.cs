@@ -1,4 +1,4 @@
-﻿string[] Array = { "hello", "2", ":-)", "g" };
+﻿string[] Array = { "hello", "2", ":-)", "g", "smile" };
 int count = 0;
 
 for (int i = 0; i < Array.Length; i++)
