@@ -1,13 +1,20 @@
 ﻿string[] Array = { "hello", "2", ":-)", "g" };
-NewArray(Array);
+int count = 0;
 
-string[] NewArray(string[] Array)
+for (int i = 0; i < Array.Length; i++)
+{
+    if (Array[i].Length <= 3)
+    {
+        count = count + 1;
+    }
+}
+
+string[] NewArray(string[] Array, int count)
 {
     int x = 0;
-    string[] answer = new string[Array.Length];
+    string[] answer = new string[count];
     for (int i = 0; i < Array.Length; i++)
     {
-
         if (Array[i].Length <= 3)
         {
             answer[x] = Array[i];
@@ -19,3 +26,4 @@ string[] NewArray(string[] Array)
     Console.Write("]");
     return answer;
 }
+NewArray(Array, count);
